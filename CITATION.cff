@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use the JITServe scheduling method, please cite the original paper below. To identify this implementation, also record the plugin repository and commit used."
+title: "jitserve-vllm-plugin"
+type: software
+authors:
+  - name: "jitserve-vllm-plugin contributors"
+repository-code: "https://github.com/982945902/jitserve-vllm-plugin"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "JITServe: SLO-aware LLM Serving with Imprecise Request Information"
+  authors:
+    - family-names: Zhang
+      given-names: Wei
+    - family-names: Wu
+      given-names: Zhiyu
+    - family-names: Mu
+      given-names: Yi
+    - family-names: Ning
+      given-names: Rui
+    - family-names: Liu
+      given-names: Banruo
+    - family-names: Sarda
+      given-names: Nikhil
+    - family-names: Lee
+      given-names: Myungjin
+    - family-names: Lai
+      given-names: Fan
+  collection-title: "23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)"
+  publisher:
+    name: USENIX Association
+  year: 2026
+  start: 825
+  end: 848
+  url: "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei"

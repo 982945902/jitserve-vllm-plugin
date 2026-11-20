@@ -1,0 +1,10 @@
+jitserve-vllm-plugin
+
+This independent plugin adapts scheduling ideas and portions of the JITServe research artifact by the JITServe contributors, licensed under the Apache License, Version 2.0.
+
+Upstream artifact: https://github.com/UIUC-MLSys/JITServe
+Upstream revision: ef3ab0c3f3cf42baa6dc3f928bee7675c2efa0c6
+Paper: Wei Zhang, Zhiyu Wu, Yi Mu, Rui Ning, Banruo Liu, Nikhil Sarda, Myungjin Lee, and Fan Lai. JITServe: SLO-aware LLM Serving with Imprecise Request Information. NSDI 2026, pp. 825–848.
+https://www.usenix.org/conference/nsdi26/presentation/zhang-wei
+
+The upstream work supplies the basis for SLO density ranking, GMAX batch selection, admission control, and cutoff adaptation. Changes for this distribution include out-of-tree vLLM V1 scheduler adapters, a request-level on-time completion objective, HTTP delivery receipts, and online feedback using groups of arriving requests. The vLLM runtime is a separate dependency maintained by the vLLM project: https://github.com/vllm-project/vllm.

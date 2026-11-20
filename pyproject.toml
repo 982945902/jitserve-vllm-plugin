@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jitserve-vllm31-plugin"
+version = "0.1.0"
+description = "An independent JITServe-style GMAX scheduler plugin for vLLM V1"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = ["vllm==0.31.*", "pyzmq"]
+
+[project.urls]
+Repository = "https://github.com/982945902/jitserve-vllm-plugin"
+"Upstream JITServe" = "https://github.com/UIUC-MLSys/JITServe"
+Paper = "https://www.usenix.org/conference/nsdi26/presentation/zhang-wei"
+
+[project.entry-points."vllm.endpoint_plugins"]
+jitserve_api = "jitserve_vllm31.endpoint:JitServeEndpointPlugin"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
